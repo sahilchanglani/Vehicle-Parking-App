@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "188160671985",
+    "project_id": "vehicle-management-86346",
+    "storage_bucket": "vehicle-management-86346.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188160671985:android:b3154c7739e18c4e9ca950",
+        "android_client_info": {
+          "package_name": "com.skc.vehicle_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188160671985-0gr28it8r1cnibue566b04bi4db2vloj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATQy995_xZlEr9Q_XZ-wpgFj16eCLxMpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188160671985-0gr28it8r1cnibue566b04bi4db2vloj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
