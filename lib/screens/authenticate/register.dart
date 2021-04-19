@@ -26,18 +26,18 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return loading ? Loading() : Scaffold(
-        backgroundColor: Colors.grey[100],
+        backgroundColor: Colors.grey[300],
         appBar: AppBar(
-          backgroundColor: Colors.grey[600],
+          backgroundColor: Colors.grey[700],
           elevation: 0,
-          title: Text('Sign up to Vehicle Parking'),
+          title: Text('Sign up to Par-King'),
           actions: [
             FlatButton.icon(
                 onPressed: () {
                   widget.toggleView();
                 },
-                icon: Icon(Icons.person),
-                label: Text('Log in'))
+                icon: Icon(Icons.person,color: Colors.limeAccent,),
+                label: Text('Log in',style: TextStyle(color: Colors.limeAccent),))
           ],
         ),
         body: Container(

@@ -8,26 +8,12 @@ class DatabaseService {
 
   final CollectionReference ownerCollection = Firestore.instance.collection('Owners');
 
-  Future updateUserData(String sugars, String name, int strength) async{
+  Future updateUserData(String name, String vehicleNo, int vehicleType) async{
     return await ownerCollection.document(uid).setData({
-      'sugars':sugars,
       'name':name,
-      'strength':strength,
+      'vehicleNo':vehicleNo,
+      'vehicleType':vehicleType,
     });
-  }
-  //List of brew from snapshot
-  List<Owner> _ownerListFromSnapshot(QuerySnapshot snapshot){
-    return snapshot.documents.map((doc){
-      return Owner(
-          name: doc.data['name'] ?? '',
-          vehicleNo: doc.data['vehicleNo'] ?? '',
-          vehicleType: doc.data['vehicleType'] ?? 2
-      );
-    }).toList();
-  }
-  // get brews stream
-  Stream<List<Owner>> get owners {
-    return ownerCollection.snapshots().map(_ownerListFromSnapshot);
   }
   // UserData from Doc snapshot
   UserData _userDataFromSnapshot(DocumentSnapshot snapshot){
@@ -35,7 +21,7 @@ class DatabaseService {
         uid: uid,
         name: snapshot.data['name'],
         vehicleNo: snapshot.data['vehicleNo'],
-        vehicleType: snapshot.data['vehicleType']
+        vehicleType: snapshot.data['vehicleType'],
     );
   }
   // GET User doc stream

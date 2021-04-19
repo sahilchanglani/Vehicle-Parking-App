@@ -26,18 +26,18 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return loading ? Loading() : Scaffold(
-        backgroundColor: Colors.grey[100],
+        backgroundColor: Colors.grey[300],
         appBar: AppBar(
-          backgroundColor: Colors.grey[600],
+          backgroundColor: Colors.grey[700],
           elevation: 0,
-          title: Text('Sign in to Vehicle Parking'),
+          title: Text('Sign in to Par-King'),
           actions: [
             FlatButton.icon(
                 onPressed: () {
                   widget.toggleView();
                 },
-                icon: Icon(Icons.person),
-                label: Text('Register'))
+                icon: Icon(Icons.person,color: Colors.limeAccent,),
+                label: Text('Register',style: TextStyle(color: Colors.limeAccent),))
           ],
         ),
         body: Container(

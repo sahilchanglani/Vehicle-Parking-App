@@ -1,59 +1,96 @@
+import 'package:flutter_map/flutter_map.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:vehicle_management/home/settings_form.dart';
 import 'package:vehicle_management/models/owner.dart';
+import 'package:vehicle_management/models/user.dart';
 import 'package:vehicle_management/services/auth.dart';
 import 'package:vehicle_management/services/database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import "package:latlong/latlong.dart" as latLng;
+
 
 class Home extends StatelessWidget {
-  @override
 
   final AuthService _auth = AuthService();
+  GoogleMapController _googleMapController;
 
+
+  @override
   Widget build(BuildContext context) {
 
-    // void _showSettings(){
-    //   showModalBottomSheet(context: context, builder: (context){
-    //     return Container(
-    //       padding: EdgeInsets.symmetric(vertical: 20,horizontal: 60),
-    //       child: SettingsForm(),
-    //     );
-    //   });
-    // }
+    final user = Provider.of<User>(context);
+    void _showSettings(){
+      showModalBottomSheet(context: context, builder: (context){
+        return Container(
+          padding: EdgeInsets.symmetric(vertical: 20,horizontal: 60),
+          child: SettingsForm(),
+        );
+      });
+    }
 
-    return StreamProvider<List<Owner>>.value(
-      value: DatabaseService().owners,
-      child: Scaffold(
-        backgroundColor: Colors.blue[50],
+    return StreamBuilder<UserData>(
+      stream: DatabaseService(uid: user.uid).userData,
+      builder: (context, snapshot) {
+
+      UserData userData = snapshot.data;
+      return Scaffold(
+        backgroundColor: Colors.grey[200],
         appBar: AppBar(
-          title: Text('Vehicle Parking'),
-          backgroundColor: Colors.blue[400],
+          title: Text('Par-King'),
+          backgroundColor: Colors.grey[700],
           elevation: 0,
-          actions: [
-            FlatButton.icon(
-                  icon: Icon(Icons.person),
-                label: Text('Logout'),
-                onPressed: () async {
-                  await _auth.signOut();
-                }
-            ),
-            // FlatButton.icon(
-            //   icon: Icon(Icons.settings),
-            //   label: Text('Settings'),
-            //   onPressed: () => _showSettings(),
-            // )
-          ],
         ),
-        body: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/coffee_bg.png'),
-                  fit: BoxFit.cover
-              ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              UserAccountsDrawerHeader(
 
-            ),
-            child: Text('Home content')
+                accountName: Text('${userData.name}'),
+                accountEmail: Text(""),
+                currentAccountPicture: CircleAvatar(
+                  backgroundColor: Colors.orange,
+                  child: Text(
+                    "${userData.name[0]}",
+                    style: TextStyle(fontSize: 40.0),
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text('Edit Profile'),
+                onTap: () {
+                  _showSettings();
+                  //Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text('Logout'),
+                onTap: () async {
+                  await _auth.signOut();
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
         ),
-      ),
+        body: GoogleMap(
+          initialCameraPosition: CameraPosition(
+            target: LatLng(34.056340, -118.232050),
+            zoom: 11
+          ),
+          onMapCreated: (controller) => _googleMapController=controller,
+          // markers: {
+          //   Marker(
+          //     position: LatLng(34.056340, -118.232050),
+          //     icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
+          //
+          //   ),
+          // },
+        )
+      );
+    }
     );
   }
 }

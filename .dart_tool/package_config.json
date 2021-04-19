@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "ansicolor",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/ansicolor-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "async",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/async-2.5.0-nullsafety.1",
       "packageUri": "lib/",
@@ -44,10 +50,22 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "console_log_handler",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/console_log_handler-1.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/cupertino_icons-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "custom_radio_grouped_button",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/custom_radio_grouped_button-1.0.6+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
     },
     {
       "name": "fake_async",
@@ -92,6 +110,24 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "flutter_image",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_image-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "flutter_map",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_map-0.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "flutter_plugin_android_lifecycle",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "flutter_spinkit",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_spinkit-4.1.2+1",
       "packageUri": "lib/",
@@ -110,6 +146,24 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/font_awesome_flutter-8.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_maps_flutter",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "google_maps_flutter_platform_interface",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/google_maps_flutter_platform_interface-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
       "name": "http",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/http-0.12.2",
       "packageUri": "lib/",
@@ -122,8 +176,32 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/intl-0.16.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.5"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/js-0.6.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "latlong",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/latlong-0.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "lists",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/lists-0.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "1.0"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/logging-0.11.4",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -138,6 +216,12 @@
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.3.0-nullsafety.3",
       "packageUri": "lib/",
       "languageVersion": "2.10"
+    },
+    {
+      "name": "mgrs_dart",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/mgrs_dart-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
     },
     {
       "name": "path",
@@ -156,6 +240,18 @@
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.1"
+    },
+    {
+      "name": "positioned_tap_detector",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/positioned_tap_detector-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "proj4dart",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/proj4dart-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
     },
     {
       "name": "provider",
@@ -194,6 +290,12 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "stream_transform",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/stream_transform-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
       "name": "string_scanner",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/string_scanner-1.1.0-nullsafety.1",
       "packageUri": "lib/",
@@ -212,10 +314,34 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "transparent_image",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/transparent_image-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
+      "name": "tuple",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/tuple-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "typed_data",
       "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/typed_data-1.3.0-nullsafety.3",
       "packageUri": "lib/",
       "languageVersion": "2.10"
+    },
+    {
+      "name": "unicode",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/unicode-0.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
+      "name": "validate",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/validate-1.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "vector_math",
@@ -224,13 +350,19 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "wkt_parser",
+      "rootUri": "file:///C:/Users/sahil/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/wkt_parser-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "vehicle_management",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-13T10:50:42.996438Z",
+  "generated": "2021-04-18T20:51:13.339567Z",
   "generator": "pub",
   "generatorVersion": "2.10.3"
 }
