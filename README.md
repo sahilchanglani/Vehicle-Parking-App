@@ -5,6 +5,8 @@ A new Flutter application.
 
 RDBMS IA-2 Research Paper Implementation
 
+Member 1
+
 Name : Sahil Changlani
 
 Roll No : 1911046
@@ -17,6 +19,7 @@ Faculty Name : Vaibhav Vasani
 
 College Name : KJSCE
 
+Member 2
 
 Name : Sasikumar Goundar
 
