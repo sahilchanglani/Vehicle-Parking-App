@@ -13,11 +13,6 @@ Roll No : 1911046
 
 Div : A3
 
-Course : RDBMS
-
-Faculty Name : Vaibhav Vasani
-
-College Name : KJSCE
 
 Member 2
 
@@ -32,7 +27,6 @@ Course : RDBMS
 Faculty Name : Vaibhav Vasani
 
 College Name : KJSCE
-
 
 
 ## Getting Started
